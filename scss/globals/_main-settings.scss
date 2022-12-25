@@ -32,7 +32,6 @@ button {
     fill: var(--white);
   }
 }
-
 .btn .defenition {
   margin-right: 7px;
 }
@@ -63,6 +62,9 @@ ul {
   font-size: 36px;
   line-height: 1.38;
   margin: 0 0 14px 0;
+  @media screen and (max-width: 427px) {
+    font-size: 30px;
+  }
 }
 .crosstitle {
   font-size: 18px;
@@ -72,6 +74,9 @@ ul {
 .description {
   margin: 0 0 28px 0;
   color: var(--grey);
+  @media screen and (max-width: 427px) {
+    font-size: 10px;
+  }
 }
 .defenition {
   font-weight: var(--bold-weight);
@@ -100,9 +105,8 @@ ul {
   width: 100vw;
   max-width: 320px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
-
 @media screen and (min-width: 428px) {
   .container {
     max-width: 396px;
@@ -115,7 +119,6 @@ ul {
   .container {
     width: 736px;
     max-width: 736px;
-    margin: 0 auto;
     padding: 0;
   }
 }

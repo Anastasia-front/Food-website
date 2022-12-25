@@ -51,18 +51,19 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  margin-bottom: 50px;
   background: var(--white);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 999;
   overflow: scroll;
 
-  transform: translateX(150%);
+  transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .menu-container .menu-toggle {
@@ -78,23 +79,18 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 100px;
 }
 
-.mobile-menu .link {
-  color: var(--navy-blue);
-  text-decoration: none;
-}
 .burger-nav-items {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 80px;
-  margin-left: 40px;
+  margin-top: 50px;
+  margin-left: 15%;
 }
-.burger-nav-item,
-.burger-number {
-  font-size: 36px;
+.burger-nav-item {
+  font-size: 26px;
   font-weight: var(--semibold-weight);
   line-height: 1.11;
 }
@@ -110,30 +106,24 @@
   flex-direction: column;
   gap: 30px;
   align-items: flex-start;
-  margin: 0 0 30px 40px;
+  margin-left: 15%;
 }
-.link.description.contact-icon.burger-number,
-.mobile-menu.link.active {
-  color: var(--blue-color);
-}
-.link.description.contact-icon.burger-number {
-  font-size: 25px;
-}
-.link.description.contact-icon.burger {
+.contact-icon {
   font-size: 20px;
-  font-weight: var(--semibold-weight);
-  line-height: 1.2;
-  color: var(--slate-color);
+  font-weight: var(--bold-fonts);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
-
 .burger-svg-icons {
   display: flex;
   gap: 30px;
-  align-items: flex-start;
-  margin: 0 0 48px 40px;
+  justify-content: flex-end;
+  margin: 30px 10% 0 0;
 }
 .burger-svg-icon-link {
-  background-color: var(--blue-color);
+  background-color: var(--orange);
   display: flex;
   justify-content: center;
   align-items: center;

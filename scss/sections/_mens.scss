@@ -1,0 +1,42 @@
+.mens {
+  @media screen and (max-width: 1199px) {
+    & {
+      display: none;
+    }
+  }
+  margin: 70px auto;
+  max-width: 1600px;
+  height: auto;
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url("/images/bg@2x.jpg");
+    }
+  }
+  & .container {
+    min-width: 300px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  & .subtitle {
+    color: var(--orange);
+    text-align: center;
+  }
+  & .description,
+  & .defenition {
+    color: var(--white);
+    text-align: center;
+  }
+}
+.video-link {
+  display: flex;
+  gap: 10px;
+}

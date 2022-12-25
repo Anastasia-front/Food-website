@@ -1,0 +1,25 @@
+.FAQ {
+  @media screen and (max-width: 1199px) {
+    & {
+      display: none;
+    }
+  }
+  & .subtitle {
+    padding: 70px 0;
+    text-align: center;
+  }
+}
+.FAQ-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 90px;
+  row-gap: 10px;
+}
+.FAQ-item {
+  flex-basis: calc((100% - 90px) / 2);
+  & span {
+    color: var(--orange);
+    font-size: 25px;
+    margin-right: 10px;
+  }
+}

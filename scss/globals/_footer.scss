@@ -1,0 +1,23 @@
+.footer {
+  background: var(--orange);
+  color: var(--white);
+  padding: 70px 0;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  & .description {
+    color: var(--white);
+    text-align: center;
+  }
+}
+.word-items,
+.social-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}

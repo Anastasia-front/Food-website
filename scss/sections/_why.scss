@@ -27,6 +27,14 @@
 .why-item {
   gap: 50px;
   position: relative;
+  @media screen and (max-width: 427px) {
+    & .text .subtitle {
+      font-size: 30px;
+    }
+    & .text .description {
+      font-size: 10px;
+    }
+  }
   @media screen and (max-width: 767px) {
     & {
       flex-direction: column;
@@ -60,11 +68,10 @@
   }
 }
 .picture-dishes {
-  width: 100px;
-  height: 25%;
+  width: 300px;
   @media screen and (min-width: 428px) {
     & {
-      width: 150px;
+      width: 380px;
     }
   }
   @media screen and (min-width: 600px) {
@@ -88,16 +95,16 @@
   position: absolute;
   transform: rotate(144deg);
   top: 50%;
-  right: 25%;
-  width: 425px;
-  height: 425px;
+  right: -25%;
+  width: 225px;
+  height: 225px;
 
   @media screen and (min-width: 428px) {
     & {
-      top: 20%;
-      right: -25%;
-      width: 425px;
-      height: 425px;
+      top: 45%;
+      right: -42%;
+      width: 325px;
+      height: 325px;
     }
   }
   @media screen and(min-width: 600px) and (max-width: 767px) {
@@ -126,7 +133,7 @@
   }
 }
 .picture-burger {
-  width: 25%;
+  width: 250px;
   height: auto;
 
   @media screen and (min-width: 428px) {
@@ -154,14 +161,14 @@
     }
   }
 }
-@media screen and (max-width: 427px) {
-  & {
-  }
-}
-@media screen and (min-width: 428px) {
-  & {
-  }
-}
+// @media screen and (max-width: 427px) {
+//   & {
+//   }
+// }
+// @media screen and (min-width: 428px) {
+//   & {
+//   }
+// }
 // @media screen and (max-width: 767px) {
 //     & {
 //       display: none;

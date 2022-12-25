@@ -1,0 +1,14 @@
+.black {
+  @media screen and (max-width: 1199px) {
+    & {
+      display: none;
+    }
+  }
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  background: var(--passion);
+  color: var(--white);
+  padding: 70px 0;
+}
