@@ -1,0 +1,72 @@
+.order .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  @media screen and (min-width: 600px) and (max-width: 767px) {
+    & {
+      width: 590px;
+      max-width: 590px;
+    }
+  }
+}
+.flex {
+  display: flex;
+  gap: 22px;
+}
+.btn {
+  @media screen and (max-width: 427px) {
+    & {
+      padding: 12px 18px;
+    }
+  }
+}
+.backward {
+  background: var(--white);
+  color: var(--black);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  & svg {
+    fill: var(--black);
+  }
+}
+.picture-order {
+  @media screen and (max-width: 767px) {
+    & {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      width: 300px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 502px;
+    }
+  }
+}
+.order .title {
+  @media screen and (max-width: 427px) {
+    & {
+      font-size: 40px;
+    }
+  }
+}
+.order .description {
+  @media screen and (max-width: 427px) {
+    & {
+      font-size: 10px;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 767px) {
+    & {
+      padding-right: 150px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-right: 180px;
+    }
+  }
+}

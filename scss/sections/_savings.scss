@@ -1,0 +1,24 @@
+.savings {
+  background: var(--orange);
+  color: var(--white);
+  width: 100vw;
+  @media screen and (max-width: 1199px) {
+    & {
+      display: none;
+    }
+  }
+}
+.savings-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.savings .title {
+  margin: 0 0 5px 0;
+}
+.savings-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

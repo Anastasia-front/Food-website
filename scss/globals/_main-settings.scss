@@ -1,0 +1,129 @@
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--black);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  background-color: var(--white);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: var(--black);
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  border-style: none;
+  padding: 16px 36px;
+  color: var(--white);
+  & svg {
+    fill: var(--white);
+  }
+}
+
+.btn .defenition {
+  margin-right: 7px;
+}
+img {
+  display: block;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.title,
+.subtitle,
+.crosstitle {
+  font-family: var(--second-font);
+  font-weight: var(--bold-weight);
+}
+.title {
+  font-size: 50px;
+  line-height: 1.04;
+  margin: 0 0 26px 0;
+}
+.subtitle {
+  font-size: 36px;
+  line-height: 1.38;
+  margin: 0 0 14px 0;
+}
+.crosstitle {
+  font-size: 18px;
+  line-height: 1.55;
+  margin: 23px 0 4px 0;
+}
+.description {
+  margin: 0 0 28px 0;
+  color: var(--grey);
+}
+.defenition {
+  font-weight: var(--bold-weight);
+  font-size: 14px;
+}
+.price {
+  font-family: var(--second-font);
+  font-weight: var(--semibold-weight);
+  font-size: 24px;
+  line-height: 1.16;
+}
+.section {
+  padding: 40px 0;
+}
+.secret-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.container {
+  width: 100vw;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 396px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* -------------------------MAIN SETTINGS---------------------------------- */
+
+  .container {
+    width: 736px;
+    max-width: 736px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* -------------------------MAIN SETTINGS---------------------------------- */
+
+  .container {
+    width: 1158px;
+    max-width: 1158px;
+  }
+}
