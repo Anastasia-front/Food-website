@@ -23,7 +23,8 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height);
   background-color: var(--white);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 li {
@@ -644,7 +645,7 @@ ul {
   max-width: 1600px;
   height: auto;
   background-color: var(--black);
-  background-image: url(/images/bg.jpg);
+  background-image: url(./.././images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -656,7 +657,7 @@ ul {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .mens {
-    background-image: url("/images/bg@2x.jpg");
+    background-image: url("./.././images/bg@2x.jpg");
   }
 }
 .mens .container {
