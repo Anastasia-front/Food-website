@@ -6,6 +6,7 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height);
   background-color: var(--white);
+  margin: 0 auto;
 }
 li {
   list-style: none;
@@ -89,6 +90,8 @@ ul {
   line-height: 1.16;
 }
 .section {
+  width: 100vw;
+  margin: 0 auto;
   padding: 40px 0;
 }
 .secret-name {
@@ -102,31 +105,22 @@ ul {
   clip: rect(0 0 0 0);
 }
 .container {
-  width: 100vw;
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-}
-@media screen and (min-width: 428px) {
-  .container {
-    max-width: 396px;
+  @media screen and (min-width: 428px) {
+    & {
+      width: 396px;
+    }
   }
-}
-
-@media screen and (min-width: 768px) {
-  /* -------------------------MAIN SETTINGS---------------------------------- */
-
-  .container {
-    width: 736px;
-    max-width: 736px;
-    padding: 0;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 736px;
+    }
   }
-}
-@media screen and (min-width: 1200px) {
-  /* -------------------------MAIN SETTINGS---------------------------------- */
-
-  .container {
-    width: 1158px;
-    max-width: 1158px;
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 1158px;
+    }
   }
 }

@@ -23,6 +23,7 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height);
   background-color: var(--white);
+  margin: 0 auto;
 }
 
 li {
@@ -125,6 +126,8 @@ ul {
 }
 
 .section {
+  width: 100vw;
+  margin: 0 auto;
   padding: 40px 0;
 }
 
@@ -140,32 +143,26 @@ ul {
 }
 
 .container {
-  width: 100vw;
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 396px;
+    width: 396px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* -------------------------MAIN SETTINGS---------------------------------- */
   .container {
     width: 736px;
-    max-width: 736px;
-    padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* -------------------------MAIN SETTINGS---------------------------------- */
   .container {
     width: 1158px;
-    max-width: 1158px;
   }
 }
+
 .header {
   padding: 22px 0;
   box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.3);
@@ -327,6 +324,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--black);
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -645,6 +643,7 @@ ul {
   margin: 70px auto;
   max-width: 1600px;
   height: auto;
+  background-color: var(--black);
   background-image: url(/images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
