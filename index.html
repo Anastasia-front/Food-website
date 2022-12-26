@@ -374,49 +374,137 @@
           <form class="form">
             <div class="form-group" role="group" aria-labelledby="contact-details">
   
-              <p class="form-title" id="contact-details">Leave your contacts and we will call you back</p>
-              
-              <div class="form-field"><label for="user-name">Name</label>
-                <input type="text" name="username" id="user-name" class="form-input" /> 
-                <span class="icon"> 
-                  <svg class="modal-svg-icon human" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg> </span>
-              </div>
+              <h3 class="crosstitle" id="contact-details">Make your order and we will process it</h3>
+              <div class="flex">
+                <div class="form-field">
+                  <label for="dish">DISH</label>
+                    <select name="dish" id="dish">
+                      <optgroup label="FIRST">
+                        <option value="d1">Borshch</option>
+                        <option value="d2">Soup</option>
+                        <option value="d3">Bouillon</option>
+                      </optgroup>
   
-              <div class="form-field"><label for="phone-number"> Phone</label>
-                <input type="tel" name="phone" id="phone-number" class="form-input"/>
-                <span class="icon"> 
-                  <svg class="modal-svg-icon handset" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone-modal"></use>
-                    </svg> 
-                </span>
+                      <optgroup label="SECOND">
+                        <option value="d4">Potato</option>
+                        <option value="d5">Sereal</option>
+                        <option value="d6" selected>Pasta</option>
+                      </optgroup>
+                    </select>
+                </div>
+                <div class="form-field">
+                  <label for="amount">AMOUNT</label>
+                  <select id="amount" name="amount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
               </div>
-  
-              <div class="form-field"><label for="email">Email</label>
+              <div class="flex">
+                <div class="form-field">
+                  <label for="beverage">BEVERAGE</label>
+                  <select name="beverage" id="beverage">
+                    <optgroup label="HOT">
+                      <option value="b1">Coffee</option>
+                      <option value="b2">Tea</option>
+                      <option value="b3">Cocoa</option>
+                    </optgroup>
+                    <optgroup label="COLD">
+                      <option value="b4">Water</option>
+                      <option value="b5">Coctail</option>
+                      <option value="b6" selected>Juice</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="amount">AMOUNT</label>
+                  <select id="amount" name="amount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="amount">NUMBER OF PEOPLE</label>
+                <select id="amount" name="amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3" selected>3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <!-- <div class="form-field"><label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-input"/>
                 <span class="icon"> 
                   <svg class="modal-svg-icon letter" width="18" height="24">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg> </span>
-              </div>
-  
+              </div> -->
+    
               <div class="form-field" id="contact-details"><label for="comment">Comment</label>
-                <textarea placeholder="Text input" name="comment" id="comment" class="form-input"></textarea>
+                <textarea placeholder="If you have a question - write here and we will call back you soon" name="comment" id="comment" class="form-input"></textarea>
               </div>
-  
-              <div class="accept">
+    
+              <div class="acceptions">
                 <label  class="accept">
                   <input class="checkbox" type="checkbox" name="accept-policy">
                   <span class="done">
                       <svg class="modal-svg-icon-done" width="10" height="8">
                         <use href="./images/icons.svg#icon-done"></use></svg>
                   </span>
-                I accept the terms and conditions of the <a href=""> Privacy Policy</a></label>
+                   I will eat at <a href=""> restaurant</a></label>
+                <label  class="accept">
+                  <input class="checkbox" type="checkbox" name="accept-policy">
+                  <span class="done">
+                      <svg class="modal-svg-icon-done" width="10" height="8">
+                        <use href="./images/icons.svg#icon-done"></use></svg>
+                  </span>
+                I neead a <a href=""> delivery</a></label>
+                <label  class="accept">
+                  <input class="checkbox" type="checkbox" name="accept-policy">
+                  <span class="done">
+                      <svg class="modal-svg-icon-done" width="10" height="8">
+                        <use href="./images/icons.svg#icon-done"></use></svg>
+                  </span>
+                I have a <a href=""> promocode</a></label>
+                <label  class="accept">
+                  <input class="checkbox" type="checkbox" name="accept-policy">
+                  <span class="done">
+                      <svg class="modal-svg-icon-done" width="10" height="8">
+                        <use href="./images/icons.svg#icon-done"></use></svg>
+                  </span>
+                   I want a <a href=""> discount</a></label>
               </div>
-              
-                <button class="send" type="submit">Send</button>
+              <button class="send" type="submit">Send</button>
             </div>
+            </div>
+          </div>
+
+  
+
+  
         </div>
       </div>
 
