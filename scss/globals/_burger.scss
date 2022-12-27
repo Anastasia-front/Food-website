@@ -90,10 +90,18 @@
   margin-top: 50px;
   margin-left: 15%;
 }
+.active {
+  color: var(--orange);
+}
 .burger-nav-item {
   font-size: 26px;
   font-weight: var(--semibold-weight);
   line-height: 1.11;
+  & .mobile-menu:active,
+  & .mobile-menu:hover,
+  & .mobile-menu:focus {
+    color: var(--grey);
+  }
 }
 .burger-svg-icon-close {
   position: absolute;
@@ -108,6 +116,13 @@
   gap: 30px;
   align-items: flex-start;
   margin-left: 15%;
+  span {
+    &:active,
+    &:hover,
+    &:focus {
+      color: var(--orange);
+    }
+  }
 }
 .contact-icon {
   font-size: 20px;
@@ -132,4 +147,12 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  .burger-svg-icon {
+    fill: var(--white);
+  }
+  &:active,
+  &:hover,
+  &:focus {
+    background: var(--grey);
+  }
 }

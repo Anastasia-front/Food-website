@@ -4,11 +4,24 @@
       display: none;
     }
   }
-  & .container {
+  .container {
     display: flex;
     justify-content: space-between;
   }
   background: var(--passion);
   color: var(--white);
   padding: 70px 0;
+}
+.btn__hover {
+  &:active,
+  &:hover,
+  &:focus {
+    background: var(--light-grey);
+    svg {
+      fill: var(--grey);
+    }
+    .defenition {
+      color: var(--grey);
+    }
+  }
 }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOOD WEBSITE</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+      <header class="header page-header">
+        <div class="container burger-container">
+          <a href="./index.html" class="title">Food<span class="DX">DX</span></a>
+          <div class="menu">
+              <div class="container-nav">
+                <nav>
+                  <ul class="nav-items">
+                    <li class="nav-item"><a href="./index.html" >Home</a> </li>
+                    <li class="nav-item"><a href="./about.html" class="active">About Us</a> </li>
+                    <li class="nav-item"><a href="./designer.html">Our Designer</a> </li>
+                    <li class="nav-item"><a href="./achievement.html"> Achievement</a></li>
+                    <li class="nav-item"><a href="./FAQ.html">FAQ</a> </li>
+                  </ul>
+                </nav>
+                <button class="btn btn-header" type="button"> <a class="number" href="tel:+789123">+789123</a></button>
+              </div>
+          </div>
+          <!-- ---------------BURGER-------------------------- -->
+          <div class="header-menu-container">
+              <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <!-- ---------------BURGER-------------------------- -->
+        </div>
+      </header>
+      <main>
+          <section class="section  mens-page">
+            <div class="container">
+              <h2 class="subtitle">
+                When a man's stomach is full it makes no difference whether he is
+                rich or poor.
+              </h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
+                purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat
+                tellus.
+              </p>
+              <a href="" class="video-link">
+                <svg width="20" height="20" >
+                  <use href="./images/icons.svg#icon-video"></use>
+                </svg>
+                <p class="defenition">Watch Our Story</p>
+              </a>
+            </div>
+          </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <ul class="word-items">
+            <li class="word-item"><a href="">Register</a> </li>
+            <li class="word-item"><a href="">Forum</a> </li>
+            <li class="word-item"><a href="">Affiliate</a> </li>
+            <li class="word-item"><a href="">FAQ</a> </li>
+          </ul>
+          <ul class="social-items">
+            <li class="social-item">
+              <a href="">
+                <svg width="24" height="24" >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="description">&copy 2021. FoodDX. All rights reserved.</p>
+        </div>
+      </footer>
+    <!-----------------BURGER-------------------------- -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle close js-close-menu" type="button">
+            <img src="./images/close.png" class="icon-close" alt="close" width="40" height="40">
+            </button>
+            <ul class="mobile-menu">
+            <li> <ul class="burger-nav-items">
+                <li class="burger-nav-item">
+                <a href="./index.html" class="mobile-menu ">Home</a>
+                </li>
+                <li class="burger-nav-item">
+                <a href="./about.html" class="mobile-menu active">About Us</a>
+                </li>
+                <li class="burger-nav-item">
+                <a href="./designer.html" class="mobile-menu ">Our designer</a>
+                </li>
+                <li class="burger-nav-item">
+                    <a href="./achievement.html" class="mobile-menu ">Achievement</a>
+                </li>
+                <li class="burger-nav-item">
+                    <a href="./FAQ.html" class="mobile-menu ">FAQ</a>
+                </li>
+            </ul></li>
+    
+            <li><ul class="burger-contacts-icons">
+                <li class="burger-contacts-icon">
+                <a href="tel:+1800789123" class="contact-icon"
+                    ><img src="./images/phone-call.png" alt="phone" width="30" height="30"> <span>
+                    1800 789 123
+                    </span> </a
+                >
+                <li class="burger-contacts-icon">
+                <a
+                    href="mailto:foodDX@gmail.com"
+                    class=" contact-icon "
+                    >
+                    <img src="./images/mail.png" alt="envelop" width="30" height="30">
+                    <span>foodDX@gmail.com</span> </a
+                >
+                </li>
+                </li>
+            </ul>
+            <ul class="burger-svg-icons">
+                <li class="burger-svg-icon-li">
+                <a href="" class="burger-svg-icon-link">
+                    <svg class="burger-svg-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                </li>
+                <li class="burger-svg-icon-li">
+                <a href="" class="burger-svg-icon-link"
+                    ><svg class="burger-svg-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+                </li>
+                <li class="burger-svg-icon-li">
+                <a href="" class="burger-svg-icon-link">
+                    <svg class="burger-svg-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                </li>
+            </ul></li>
+            </ul>
+    </div>
+          
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- ---------------BURGER-------------------------- -->
+  </body>
+</html>

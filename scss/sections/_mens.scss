@@ -19,7 +19,8 @@
       background-image: url("./.././images/bg@2x.jpg");
     }
   }
-  & .container {
+  .container {
+    padding: 20px 0;
     min-width: 300px;
     max-width: 720px;
     display: flex;
@@ -27,17 +28,55 @@
     align-items: center;
     gap: 2px;
   }
-  & .subtitle {
+  .subtitle {
     color: var(--orange);
     text-align: center;
   }
-  & .description,
-  & .defenition {
+  .description,
+  .defenition {
     color: var(--white);
     text-align: center;
+  }
+  .description {
+    width: 80%;
   }
 }
 .video-link {
   display: flex;
   gap: 10px;
+  svg {
+    fill: var(--white);
+    margin-top: 3px;
+  }
+  &:active,
+  &:hover,
+  &:focus {
+    svg {
+      fill: var(--orange);
+    }
+
+    .defenition,
+    .defenition,
+    .defenition {
+      color: var(--orange);
+    }
+  }
+}
+.mens-page {
+  background: var(--light-grey);
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subtitle,
+  .description {
+    text-align: center;
+    width: 80%;
+  }
+  @media screen and (max-width: 1199px) {
+    & {
+      display: block;
+    }
+  }
 }

@@ -28,10 +28,10 @@
   gap: 50px;
   position: relative;
   @media screen and (max-width: 427px) {
-    & .text .subtitle {
+    .text .subtitle {
       font-size: 30px;
     }
-    & .text .description {
+    .text .description {
       font-size: 10px;
     }
   }
@@ -42,17 +42,17 @@
   }
   @media screen and (min-width: 1200px) {
     & {
-      & .text {
+      .text {
         margin-right: 30px;
       }
     }
   }
   @media screen and (min-width: 768px) {
     & {
-      & .subtitle {
+      .subtitle {
         font-size: 20px;
       }
-      & .text {
+      .text {
         margin-right: -20px;
       }
     }
@@ -63,7 +63,7 @@
 }
 .text-item {
   gap: 5px;
-  & .description {
+  .description {
     margin: 0;
   }
 }
@@ -161,26 +161,3 @@
     }
   }
 }
-// @media screen and (max-width: 427px) {
-//   & {
-//   }
-// }
-// @media screen and (min-width: 428px) {
-//   & {
-//   }
-// }
-// @media screen and (max-width: 767px) {
-//     & {
-//       display: none;
-//     }
-//   }
-//   @media screen and (min-width: 768px) {
-//     & {
-//       width: 300px;
-//     }
-//   }
-//   @media screen and (min-width: 1200px) {
-//     & {
-//       width: 502px;
-//     }
-//   }

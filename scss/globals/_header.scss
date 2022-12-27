@@ -36,8 +36,25 @@
     }
   }
 }
+.nav-item {
+  a:hover,
+  a:active,
+  a:focus {
+    color: var(--grey);
+  }
+  // .active {
+  //   color: var(--orange);
+  // }
+}
 .burger-container .title {
   margin: 0;
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1),
+      -2px -2px 3px rgba(0, 0, 0, 0.1), 2px -2px 3px rgba(0, 0, 0, 0.1),
+      -2px 2px 3px rgba(0, 0, 0, 0.1);
+  }
 }
 .page-header .burger-container {
   @media screen and (min-width: 768px) {

@@ -4,7 +4,7 @@
       display: none;
     }
   }
-  & .subtitle {
+  .subtitle {
     padding: 70px 0;
     text-align: center;
   }
@@ -17,9 +17,30 @@
 }
 .FAQ-item {
   flex-basis: calc((100% - 90px) / 2);
-  & span {
+  padding-right: 5px;
+  span {
     color: var(--orange);
     font-size: 25px;
     margin-right: 10px;
   }
+  &:active,
+  &:hover,
+  &:focus {
+    border-right: 1px solid rgba(0, 0, 0, 0.79);
+  }
+}
+.FAQ-page {
+  @media screen and (max-width: 1199px) {
+    & {
+      display: block;
+    }
+  }
+}
+.FAQ-items-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.FAQ-item-page {
+  flex-basis: 100%;
 }

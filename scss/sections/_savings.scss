@@ -23,3 +23,24 @@
   flex-direction: column;
   align-items: center;
 }
+.savings-page {
+  margin-top: 30px;
+  @media screen and (max-width: 1199px) {
+    & {
+      display: block;
+    }
+  }
+}
+.savings-items-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+.savings-item-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}

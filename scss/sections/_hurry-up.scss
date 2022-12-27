@@ -3,26 +3,26 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  & .subtitle,
-  & .description {
+  .subtitle,
+  .description {
     text-align: center;
   }
   @media screen and (max-width: 767px) {
-    & .subtitle,
-    & .description {
+    .subtitle,
+    .description {
       margin: 0 -10px 14px -10px;
     }
-    & .subtitle {
+    .subtitle {
       font-size: 28px;
     }
   }
   @media screen and (min-width: 768px) {
-    & .container {
+    .container {
       width: 65%;
     }
   }
   @media screen and (min-width: 1200px) {
-    & .container {
+    .container {
       width: 40%;
     }
   }
@@ -32,15 +32,19 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  & input {
+  input {
     padding: 14px 180px 14px 20px;
+    &:focus {
+      border: 2px solid var(--orange);
+      border-radius: 3px;
+    }
   }
   @media screen and (max-width: 767px) {
     & {
       flex-direction: column;
       gap: 20px;
     }
-    & input {
+    input {
       padding: 14px 100px 14px 20px;
     }
   }

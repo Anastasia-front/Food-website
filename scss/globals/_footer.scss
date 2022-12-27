@@ -2,14 +2,14 @@
   background: var(--orange);
   color: var(--white);
   padding: 70px 0;
-  & .container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
-  & .description {
+  .description {
     color: var(--white);
     text-align: center;
   }
@@ -20,4 +20,20 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+.word-item a {
+  color: var(--white);
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--passion);
+  }
+}
+.social-item svg {
+  fill: var(--white);
+  &:active,
+  &:hover,
+  &:focus {
+    fill: var(--passion);
+  }
 }
