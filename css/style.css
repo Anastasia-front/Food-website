@@ -486,14 +486,22 @@ select {
   line-height: 1.33;
   color: #757575;
 }
+.accept label .margin-left {
+  margin-left: 10px;
+}
 .accept a {
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--main-font);
-  margin-left: 3px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.accept a .rotate {
+  transform: rotate(90deg);
 }
 .accept a:active, .accept a:hover, .accept a:focus {
   color: var(--orange);
+}
+.accept a:active svg, .accept a:hover svg, .accept a:focus svg {
+  fill: var(--orange);
 }
 
 .accept__left-top {
@@ -624,7 +632,7 @@ select {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 70px;
 }
 
 .burger-nav-items {
@@ -659,7 +667,7 @@ select {
 .burger-contacts-icons {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   align-items: flex-start;
   margin-left: 15%;
 }
@@ -680,7 +688,7 @@ select {
   display: flex;
   gap: 30px;
   justify-content: flex-end;
-  margin: 30px 10% 0 0;
+  margin: 70px 10% 0 0;
 }
 
 .burger-svg-icon-link {
@@ -969,6 +977,27 @@ select {
   }
 }
 
+.form input:not(:-moz-placeholder-shown):required:invalid {
+  border-color: red;
+}
+
+.form input:not(:-ms-input-placeholder):required:invalid {
+  border-color: red;
+}
+
+.form input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+.form input:not(:-moz-placeholder-shown):required:valid {
+  border-color: rgb(0, 197, 0);
+}
+.form input:not(:-ms-input-placeholder):required:valid {
+  border-color: rgb(0, 197, 0);
+}
+.form input:not(:placeholder-shown):required:valid {
+  border-color: rgb(0, 197, 0);
+}
+
 .mens {
   margin: 70px auto;
   max-width: 1600px;
@@ -1033,7 +1062,12 @@ select {
 }
 
 .mens-page {
-  background: var(--light-grey);
+  background: var(--orange);
+  border-bottom: 3px solid var(--white);
+}
+.mens-page .description {
+  color: var(--passion);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(255, 255, 255, 0.3), 2px -2px 3px rgba(255, 255, 255, 0.3), -2px 2px 3px rgba(255, 255, 255, 0.3);
 }
 .mens-page .container {
   display: flex;
@@ -1317,7 +1351,12 @@ select {
 }
 
 .savings-page {
-  margin-top: 30px;
+  border-bottom: 3px solid var(--white);
+  background: var(--orange);
+  color: var(--white);
+}
+.savings-page .title {
+  margin-bottom: 3px;
 }
 @media screen and (max-width: 1199px) {
   .savings-page {
@@ -1330,12 +1369,11 @@ select {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 55px;
 }
 
 .savings-item-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

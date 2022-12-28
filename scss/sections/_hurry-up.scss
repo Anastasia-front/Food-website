@@ -49,3 +49,11 @@
     }
   }
 }
+.form input {
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
+  &:not(:placeholder-shown):required:valid {
+    border-color: rgb(0, 197, 0);
+  }
+}

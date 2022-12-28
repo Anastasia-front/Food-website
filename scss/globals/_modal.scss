@@ -163,19 +163,40 @@ select {
     font-size: 15px;
     line-height: 1.33;
     color: #757575;
+    .margin-left {
+      margin-left: 10px;
+    }
   }
   a {
-    font-size: 20px;
+    font-size: 18px;
     font-family: var(--main-font);
-    margin-left: 3px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    .rotate {
+      transform: rotate(90deg);
+    }
     &:active,
     &:hover,
     &:focus {
       color: var(--orange);
+      svg {
+        fill: var(--orange);
+      }
     }
   }
+  // a:nth-child(1) {
+  //   margin-left: 10px;
+  // }
+  // a:nth-child(2) {
+  //   margin-left: 20px;
+  // }
+  // a:nth-child(3),
+  // a:nth-child(4) {
+  //   margin-left: 25px;
+  // }
 }
+// .accept label svg:not(:first-child) {
+//   margin-left: 10px;
+// }
 .accept__left-top {
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;

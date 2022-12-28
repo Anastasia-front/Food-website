@@ -24,7 +24,12 @@
   align-items: center;
 }
 .savings-page {
-  margin-top: 30px;
+  border-bottom: 3px solid var(--white);
+  background: var(--orange);
+  color: var(--white);
+  .title {
+    margin-bottom: 3px;
+  }
   @media screen and (max-width: 1199px) {
     & {
       display: block;
@@ -36,11 +41,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 55px;
 }
 .savings-item-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
 }

@@ -330,8 +330,8 @@
                 Limited time offer for this month. No credit card required.
               </p>
               <div class="form">
-                <input type="email" name="email" placeholder="Email Address Here" />
-                <button type="button" class="btn">Subscribe</button>
+                <input type="email" name="email" placeholder="Email Address Here" required/>
+                <button type="submit" class="btn">Subscribe</button>
               </div>
             </div>
           </section>
@@ -401,6 +401,7 @@
                 <div class="form-field">
                   <label for="amount">AMOUNT</label>
                   <select id="amount" name="amount">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
@@ -433,6 +434,7 @@
                 <div class="form-field">
                   <label for="amount">AMOUNT</label>
                   <select id="amount" name="amount">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3" selected>3</option>
@@ -480,28 +482,32 @@
                       <svg class="modal-svg-icon-done" width="10" height="8">
                         <use href="./images/icons.svg#icon-done"></use></svg>
                   </span>
-                   I will eat at <a href=""> restaurant</a></label>
+                   I will eat at <a href=""><svg width="8" height="10">
+                    <use href="./images/icons.svg#icon-arrow"></use></svg> restaurant</a></label>
                 <label  class="accept accept__right-top">
                   <input class="checkbox" type="checkbox" name="accept-policy">
                   <span class="done">
                       <svg class="modal-svg-icon-done" width="10" height="8">
                         <use href="./images/icons.svg#icon-done"></use></svg>
                   </span>
-                I neead a <a href=""> delivery</a></label>
+                I neead a <a href="" class="margin-left"><svg width="8" height="10" >
+                  <use href="./images/icons.svg#icon-arrow"  ></use></svg> delivery</a></label>
                 <label  class="accept accept__left-bottom">
                   <input class="checkbox" type="checkbox" name="accept-policy">
                   <span class="done">
                       <svg class="modal-svg-icon-done" width="10" height="8">
                         <use href="./images/icons.svg#icon-done"></use></svg>
                   </span>
-                I have a <a href=""> promocode</a></label>
+                I have a <a href="" ><svg width="8" height="10" class="rotate">
+                  <use href="./images/icons.svg#icon-arrow"  ></use></svg> promocode</a></label>
                 <label  class="accept accept__right-bottom">
                   <input class="checkbox" type="checkbox" name="accept-policy">
                   <span class="done">
                       <svg class="modal-svg-icon-done" width="10" height="8">
                         <use href="./images/icons.svg#icon-done"></use></svg>
                   </span>
-                   I want a <a href=""> discount</a></label>
+                   I want a <a href="" class="margin-left"><svg width="8" height="10" >
+                    <use href="./images/icons.svg#icon-arrow"  ></use></svg> discount</a></label>
               </div>
               <button class="send" type="submit">Send</button>
             </div>
@@ -537,7 +543,7 @@
             <li><ul class="burger-contacts-icons">
                 <li class="burger-contacts-icon">
                 <a href="tel:+1800789123" class="contact-icon"
-                    ><img src="./images/phone-call.png" alt="phone" width="30" height="30"> <span>
+                    ><img src="./images/phone-call.png"  alt="phone" width="27" height="27"> <span>
                     1800 789 123
                     </span> </a
                 >

@@ -63,7 +63,15 @@
   }
 }
 .mens-page {
-  background: var(--light-grey);
+  background: var(--orange);
+  border-bottom: 3px solid var(--white);
+  .description {
+    color: var(--passion);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3),
+      -2px -2px 3px rgba(255, 255, 255, 0.3),
+      2px -2px 3px rgba(255, 255, 255, 0.3),
+      -2px 2px 3px rgba(255, 255, 255, 0.3);
+  }
   .container {
     display: flex;
     flex-direction: column;

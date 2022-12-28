@@ -80,7 +80,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 70px;
 }
 
 .burger-nav-items {
@@ -113,7 +113,7 @@
 .burger-contacts-icons {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   align-items: flex-start;
   margin-left: 15%;
   span {
@@ -136,7 +136,7 @@
   display: flex;
   gap: 30px;
   justify-content: flex-end;
-  margin: 30px 10% 0 0;
+  margin: 70px 10% 0 0;
 }
 .burger-svg-icon-link {
   background-color: var(--orange);
