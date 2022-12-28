@@ -1,4 +1,3 @@
-@use "./var" as *;
 body {
   font-family: var(--main-font);
   font-size: 16px;
@@ -9,6 +8,9 @@ body {
   background-color: var(--white);
   margin-left: auto;
   margin-right: auto;
+}
+main {
+  overflow-x: hidden;
 }
 :active,
 :hover,
@@ -122,22 +124,23 @@ ul {
   clip: rect(0 0 0 0);
 }
 .container {
-  width: 320px;
+  width: 100vw;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
   @media screen and (min-width: 428px) {
     & {
-      width: 396px;
+      max-width: 396px;
     }
   }
   @media screen and (min-width: 768px) {
     & {
-      width: 736px;
+      max-width: 736px;
     }
   }
   @media screen and (min-width: 1200px) {
     & {
-      width: 1158px;
+      max-width: 1158px;
     }
   }
 }

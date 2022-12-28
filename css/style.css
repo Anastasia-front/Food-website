@@ -27,6 +27,10 @@ body {
   margin-right: auto;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 :active,
 :hover,
 :focus {
@@ -158,23 +162,24 @@ ul {
 }
 
 .container {
-  width: 320px;
+  width: 100vw;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
 @media screen and (min-width: 428px) {
   .container {
-    width: 396px;
+    max-width: 396px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    max-width: 736px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
 
