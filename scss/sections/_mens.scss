@@ -54,11 +54,16 @@
     svg {
       fill: var(--orange);
     }
-
-    .defenition,
-    .defenition,
     .defenition {
       color: var(--orange);
+    }
+  }
+  &:visited {
+    svg {
+      fill: var(--grey);
+    }
+    .defenition {
+      color: var(--grey);
     }
   }
 }

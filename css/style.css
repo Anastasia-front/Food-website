@@ -487,7 +487,7 @@ select {
   color: #757575;
 }
 .accept label .margin-left {
-  margin-left: 10px;
+  margin-left: 6px;
 }
 .accept a {
   font-size: 18px;
@@ -1051,14 +1051,14 @@ select {
 .video-link:active svg, .video-link:hover svg, .video-link:focus svg {
   fill: var(--orange);
 }
-.video-link:active .defenition,
-.video-link:active .defenition,
-.video-link:active .defenition, .video-link:hover .defenition,
-.video-link:hover .defenition,
-.video-link:hover .defenition, .video-link:focus .defenition,
-.video-link:focus .defenition,
-.video-link:focus .defenition {
+.video-link:active .defenition, .video-link:hover .defenition, .video-link:focus .defenition {
   color: var(--orange);
+}
+.video-link:visited svg {
+  fill: var(--grey);
+}
+.video-link:visited .defenition {
+  color: var(--grey);
 }
 
 .mens-page {
