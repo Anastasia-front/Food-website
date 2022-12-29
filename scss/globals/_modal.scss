@@ -118,8 +118,11 @@ select {
   height: 16px;
   border-radius: 2px;
   border: 1px solid var(--orange);
-  transition: border var(--main-transition),
-    background-color var(--main-transition);
+  // @media screen and (max-width: 428px) {
+  //   & {
+  //     margin-right: 3px;
+  //   }
+  // }
 }
 .modal-svg-icon-done {
   fill: transparent;
@@ -128,7 +131,6 @@ select {
   justify-content: center;
   align-items: center;
   margin: 3px auto;
-  transition: fill var(--main-transition);
 }
 .checkbox:checked {
   + .done {
@@ -155,7 +157,7 @@ select {
   justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 .accept {
   width: calc((100% - 10px) / 2);

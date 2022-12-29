@@ -437,7 +437,6 @@ select {
   height: 16px;
   border-radius: 2px;
   border: 1px solid var(--orange);
-  transition: border var(--main-transition), background-color var(--main-transition);
 }
 
 .modal-svg-icon-done {
@@ -447,7 +446,6 @@ select {
   justify-content: center;
   align-items: center;
   margin: 3px auto;
-  transition: fill var(--main-transition);
 }
 
 .checkbox:checked + .done {
@@ -475,7 +473,7 @@ select {
   justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .accept {
@@ -493,6 +491,11 @@ select {
   font-size: 18px;
   font-family: var(--main-font);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 428px) {
+  .accept a {
+    font-size: 16px;
+  }
 }
 .accept a .rotate {
   transform: rotate(90deg);
