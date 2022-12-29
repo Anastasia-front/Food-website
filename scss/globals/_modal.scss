@@ -118,11 +118,6 @@ select {
   height: 16px;
   border-radius: 2px;
   border: 1px solid var(--orange);
-  // @media screen and (max-width: 428px) {
-  //   & {
-  //     margin-right: 3px;
-  //   }
-  // }
 }
 .modal-svg-icon-done {
   fill: transparent;
@@ -155,6 +150,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   margin-bottom: 30px;
   margin-left: 2px;
