@@ -12,6 +12,9 @@ body {
 main {
   overflow-x: hidden;
 }
+.no-scroll {
+  overflow: hidden;
+}
 :active,
 :hover,
 :focus {
@@ -95,12 +98,12 @@ ul {
   margin: 0 0 28px 0;
   color: var(--grey);
   @media screen and (max-width: 427px) {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 .defenition {
   font-weight: var(--bold-weight);
-  font-size: 14px;
+  font-size: 16px;
 }
 .price {
   font-family: var(--second-font);

@@ -72,8 +72,8 @@
                   purus a odio finibus bibendum amet leo.
                 </p>
                 <div class="flex">
-                    <button type="button" class="btn" data-modal-open>
-                        <p class="defenition">Order Now</p>
+                    <button type="button" class="btn js-open-modal" data-modal="order">
+                        <span class="defenition">Order Now</span>
                         <svg width="16" height="15">
                             <use href="./images/icons.svg#icon-basket"></use></svg> 
                     </button>
@@ -203,8 +203,8 @@
                       <p class="price"> $10.50 <span>$11.70</span>  </p>
                     </div>
                     </div>
-                  <button type="button" class="btn" data-modal-open>
-                    <p class="defenition">Order Now</p>
+                  <button type="button" class="btn js-open-modal" data-modal="order">
+                    <span class="defenition">Order Now</span>
                     <svg width="16" height="15">
                         <use href="./images/icons.svg#icon-basket"></use></svg> 
                   </button>
@@ -218,8 +218,8 @@
                       <p class="price">  $9.20  <span> $11.70</span></p>
                     </div>
                     </div>
-                  <button type="button" class="btn" data-modal-open>
-                    <p class="defenition">Order Now</p>
+                  <button type="button" class="btn js-open-modal" data-modal="order">
+                    <span class="defenition">Order Now</span>
                     <svg width="16" height="15">
                         <use href="./images/icons.svg#icon-basket"></use></svg> 
                   </button>
@@ -233,8 +233,8 @@
                       <p class="price"> $12.50  <span> $15.70 </span></p>
                     </div>
                     </div>
-                  <button type="button" class="btn" data-modal-open>
-                    <p class="defenition">Order Now</p>
+                  <button type="button" class="btn js-open-modal" data-modal="order">
+                    <span class="defenition">Order Now</span>
                     <svg width="16" height="15">
                         <use href="./images/icons.svg#icon-basket"></use></svg> 
                   </button>
@@ -368,9 +368,9 @@
         </div>
       </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="close" type="button" data-modal-close>
+    <div class="overlay js-overlay-modal">
+      <div class="modal modal-order" data-modal="order">
+          <button class="js-modal-close close" type="button">
             <img class="icon-close" src="./images/close.png" alt="close" width="20" height="20">
           </button>
      
@@ -502,7 +502,7 @@
               <button class="send" type="submit">Send</button>
             </div>
           </form>
-        </div>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>

@@ -6,6 +6,7 @@
   --white: #fff;
   --grey: #555;
   --light-grey: #c4c4c4;
+  --visited: #f43206;
   --main-font: "Montserrat", sans-serif;
   --second-font: "Quicksand", sans-serif;
   --semibold-weight: 500;
@@ -29,6 +30,10 @@ body {
 
 main {
   overflow-x: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 :active,
@@ -128,13 +133,13 @@ ul {
 }
 @media screen and (max-width: 427px) {
   .description {
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 
 .defenition {
   font-weight: var(--bold-weight);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .price {
@@ -295,25 +300,23 @@ ul {
   fill: var(--passion);
 }
 
-.backdrop {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(46, 47, 66, 0.4);
-  opacity: 1;
-  transition: opacity var(--main-transition);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--main-transition);
+  z-index: 999;
 }
 
-.backdrop .is-hidden .modal {
-  transform: translate(-50%, -50%);
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal {
@@ -425,14 +428,13 @@ select {
 }
 
 .checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  display: none;
 }
 
 .done {
   display: inline-block;
   margin-right: 10px;
+  margin-left: 7px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -611,6 +613,7 @@ select {
   width: 100vw;
   height: 100vh;
   margin-bottom: 50px;
+  padding-top: 50px;
   background: var(--white);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 999;
@@ -625,8 +628,8 @@ select {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 40px;
+  right: 36px;
   color: #fff;
 }
 
@@ -911,11 +914,22 @@ select {
 .FAQ-item:active, .FAQ-item:hover, .FAQ-item:focus {
   border-right: 1px solid rgba(0, 0, 0, 0.79);
 }
+@media screen and (max-width: 768px) {
+  .FAQ-item .description {
+    font-size: 20px;
+  }
+  .FAQ-item .crosstitle {
+    font-size: 25px;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .FAQ-page {
     display: block;
   }
+}
+.FAQ-page .subtitle {
+  text-align: center;
 }
 
 .FAQ-items-page {
@@ -1053,16 +1067,13 @@ select {
   margin-top: 3px;
 }
 .video-link:active svg, .video-link:hover svg, .video-link:focus svg {
-  fill: var(--orange);
+  fill: var(--visited);
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(255, 255, 255, 0.3), 2px -2px 3px rgba(255, 255, 255, 0.3), -2px 2px 3px rgba(255, 255, 255, 0.3);
 }
 .video-link:active .defenition, .video-link:hover .defenition, .video-link:focus .defenition {
-  color: var(--orange);
-}
-.video-link:visited svg {
-  fill: var(--grey);
-}
-.video-link:visited .defenition {
-  color: var(--grey);
+  color: var(--visited);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(255, 255, 255, 0.3), 2px -2px 3px rgba(255, 255, 255, 0.3), -2px 2px 3px rgba(255, 255, 255, 0.3);
 }
 
 .mens-page {
@@ -1170,6 +1181,10 @@ select {
   }
 }
 
+.text .description {
+  font-size: 18px;
+}
+
 .why-items {
   display: flex;
   flex-direction: column;
@@ -1197,7 +1212,7 @@ select {
     font-size: 30px;
   }
   .why-item .text .description {
-    font-size: 10px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {

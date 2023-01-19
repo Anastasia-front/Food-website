@@ -1,21 +1,28 @@
-.backdrop {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(46, 47, 66, 0.4);
-  opacity: 1;
-  transition: opacity var(--main-transition);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--main-transition);
+  z-index: 999;
 }
-.backdrop .is-hidden .modal {
-  transform: translate(-50%, -50%);
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+// .backdrop .is-hidden .modal {
+//   transform: translate(-50%, -50%);
+// }
 .modal {
   position: absolute;
   top: 50%;
@@ -109,11 +116,12 @@ select {
 }
 
 .checkbox {
-  appearance: none;
+  display: none;
 }
 .done {
   display: inline-block;
   margin-right: 10px;
+  margin-left: 7px;
   width: 16px;
   height: 16px;
   border-radius: 2px;

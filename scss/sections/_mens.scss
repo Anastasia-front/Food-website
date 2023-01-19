@@ -52,18 +52,19 @@
   &:hover,
   &:focus {
     svg {
-      fill: var(--orange);
+      fill: var(--visited);
+      border-radius: 50%;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3),
+        -2px -2px 3px rgba(255, 255, 255, 0.3),
+        2px -2px 3px rgba(255, 255, 255, 0.3),
+        -2px 2px 3px rgba(255, 255, 255, 0.3);
     }
     .defenition {
-      color: var(--orange);
-    }
-  }
-  &:visited {
-    svg {
-      fill: var(--grey);
-    }
-    .defenition {
-      color: var(--grey);
+      color: var(--visited);
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3),
+        -2px -2px 3px rgba(255, 255, 255, 0.3),
+        2px -2px 3px rgba(255, 255, 255, 0.3),
+        -2px 2px 3px rgba(255, 255, 255, 0.3);
     }
   }
 }
