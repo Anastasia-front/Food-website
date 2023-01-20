@@ -337,9 +337,9 @@ ul {
 }
 
 .learn-more .modal {
-  top: 77%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 120%);
 }
 
 .close {
