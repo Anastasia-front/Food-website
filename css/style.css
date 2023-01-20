@@ -32,10 +32,6 @@ main {
   overflow-x: hidden;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 :active,
 :hover,
 :focus {
@@ -310,7 +306,7 @@ ul {
   visibility: hidden;
   opacity: 0;
   transition: opacity var(--main-transition);
-  z-index: 999;
+  z-index: 99;
 }
 
 .modal.active,
@@ -319,7 +315,14 @@ ul {
   visibility: visible;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal {
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -331,6 +334,12 @@ ul {
   background-color: var(--light-grey);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.learn-more .modal {
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, 30%);
 }
 
 .close {
@@ -435,8 +444,8 @@ select {
   display: inline-block;
   margin-right: 10px;
   margin-left: 7px;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-radius: 2px;
   border: 1px solid var(--orange);
 }
