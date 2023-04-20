@@ -436,7 +436,7 @@ select {
 
 .done {
   display: inline-block;
-  margin: 0px 10px -3px 7px;
+  margin: -7px 10px -3px 7px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
