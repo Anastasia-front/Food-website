@@ -10,14 +10,17 @@
   transition: opacity var(--main-transition);
   z-index: 99;
 }
+
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
+
 .no-scroll {
   overflow: hidden;
 }
+
 .modal {
   z-index: 100;
   visibility: hidden;
@@ -35,6 +38,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .close {
   position: absolute;
   top: 20px;
@@ -42,6 +46,7 @@
   background-color: var(--modal-color);
   border-style: none;
 }
+
 .icon-close {
   &:active,
   &:hover,
@@ -71,6 +76,7 @@
     width: 100%;
   }
 }
+
 .form-field {
   display: flex;
   flex-direction: column;
@@ -107,6 +113,7 @@
     }
   }
 }
+
 select {
   color: var(--light-black);
   background: #d0d0d01d;
@@ -116,6 +123,7 @@ select {
 .checkbox {
   display: none;
 }
+
 .done {
   display: inline-block;
   margin: -7px 10px -3px 7px;
@@ -124,6 +132,7 @@ select {
   border-radius: 2px;
   border: 1px solid var(--orange);
 }
+
 .modal-svg-icon-done {
   fill: transparent;
   stroke: transparent;
@@ -132,6 +141,7 @@ select {
   align-items: center;
   margin: 3px auto;
 }
+
 .checkbox:checked {
   + .done {
     background-color: var(--white);
@@ -147,11 +157,13 @@ select {
     }
   }
 }
+
 #contact-details {
   margin-bottom: 16px;
   text-align: center;
 }
-.acceptions {
+
+.consents {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -160,6 +172,7 @@ select {
   margin-bottom: 30px;
   margin-left: 2px;
 }
+
 .accept {
   width: calc((100% - 10px) / 2);
   label {
@@ -192,6 +205,7 @@ select {
     }
   }
 }
+
 .accept__left-top {
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -216,6 +230,7 @@ select {
   padding-left: 2px;
   padding-top: 7px;
 }
+
 .send {
   display: flex;
   align-items: center;

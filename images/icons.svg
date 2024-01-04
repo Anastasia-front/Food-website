@@ -18,8 +18,8 @@
 <symbol id="icon-arrow" viewBox="0 0 23 32">
 <path  d="M21.806 17.179l-14.842 12.36c-1.026 0.854-2.685 0.854-3.7 0l-2.466-2.054c-1.026-0.854-1.026-2.236 0-3.081l10.52-8.761-10.52-8.761c-1.026-0.854-1.026-2.236 0-3.081l2.455-2.072c1.026-0.854 2.685-0.854 3.7 0l14.842 12.36c1.037 0.854 1.037 2.236 0.011 3.090z"></path>
 </symbol>
-<symbol id="icon-done" viewBox="0 0 41 32">
-<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="9.4118" d="M35.765 4.76l-20.706 20.706-9.412-9.412"></path>
+<symbol id="icon-done" viewBox="0 0 24 24">
+<path d="M9 16.219l10.594-10.641 1.406 1.406-12 12-5.578-5.578 1.359-1.406z"></path>
 </symbol>
 </defs>
 </svg>
